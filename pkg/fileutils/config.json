@@ -1,0 +1,14 @@
+{
+    "connection":{
+        "maxIddleConnections": 0
+    },
+    "database": {
+        "user": "dev_user",
+        "password": "12345",
+        "name": "test_db"
+    },
+    "server": {
+        "address": "128.0.0.1",
+        "port": 3306
+    }
+}
