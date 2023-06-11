@@ -1,0 +1,18 @@
+{
+    "connection":{
+        "connMaxIdleTime": 60,
+        "connMaxLifetime": 240,
+        "maxIdleConns": 0,
+        "maxOpenConns": 1
+    },
+    "access": {
+        "user": "dev_user",
+        "password": "dev_user_1234",
+        "dbname": "greenman_db"
+    },
+    "server": {
+        "address": "34.69.177.162",
+        "port": 3306,
+        "dbtype": "mysql"
+    }
+}
