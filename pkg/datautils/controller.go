@@ -4,6 +4,7 @@ import (
 	"bytes"
 	"encoding/gob"
 	"fmt"
+	"log"
 )
 
 func Serialize(data any) ([]byte, error) {
@@ -23,13 +24,15 @@ func Deserialize(data []byte, target any) error {
 	var buffer bytes.Buffer
 	_, err := buffer.Write(data)
 	if err != nil {
-		return fmt.Errorf("datautils.Deserialize - Error reading bytes to buffer: %w", err)
+		log.Println("datautils.Deserialize - Error writing bytes to buffer: ", err)
+		return err
 	}
 
 	dec := gob.NewDecoder(&buffer)
 	err = dec.Decode(target)
 	if err != nil {
-		return fmt.Errorf("datautils.Deserialize - Error decoding bytes: %w", err)
+		log.Println("datautils.Deserialize - Error decoding bytes: ", err)
+		return err
 	}
 
 	return nil

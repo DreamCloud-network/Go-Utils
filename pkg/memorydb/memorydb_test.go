@@ -3,6 +3,8 @@ package memorydb
 import (
 	"log"
 	"testing"
+
+	"github.com/google/uuid"
 )
 
 type TestStruct struct {
@@ -19,7 +21,9 @@ func TestMemoryDB(t *testing.T) {
 
 	db := NewMemoryDB()
 
-	id, err := db.Push(testData)
+	id := uuid.New().String()
+
+	err := db.Push(id, testData)
 	if err != nil {
 		t.Error(err)
 		return

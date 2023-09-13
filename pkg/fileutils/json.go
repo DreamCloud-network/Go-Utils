@@ -33,23 +33,23 @@ func ReadJsonFile(filePath string) (interface{}, error) {
 	return jsonMap, nil
 }
 
-// ReadFileToBytes - Loads a file and returns a byte array with its contents.
+// ReadFileToBytes - Loads a file and returns a byte array with its contents. This function should be used only with small files.
 func ReadFileToBytes(filePath string) ([]byte, error) {
 
 	// Open our jsonFile
-	jsonFile, err := os.Open(filePath)
+	fileReader, err := os.Open(filePath)
 
 	// if we os.Open returns an error then handle it
 	if err != nil {
-		log.Println("fileutils.ReadJsonFile - Error opening configuraiton file.")
+		log.Println("fileutils.ReadFileToBytes - Error opening file.")
 		return nil, err
 	}
-	defer jsonFile.Close()
+	defer fileReader.Close()
 
 	// Read the file into a map
-	byteResult, err := ioutil.ReadAll(jsonFile)
+	byteResult, err := ioutil.ReadAll(fileReader)
 	if err != nil {
-		log.Println("fileutils.ReadJsonFile - Error parsing json file.")
+		log.Println("fileutils.ReadFileToBytes - Error reading file.")
 		return nil, err
 	}
 
