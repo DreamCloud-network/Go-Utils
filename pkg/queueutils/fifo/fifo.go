@@ -71,6 +71,8 @@ func (fifo *Fifo) SetMaxSize(sizeMax int) {
 	}
 }
 
+// Add data to the last position.
+// If the queue is full, the first element will be removed and returned.
 func (fifo *Fifo) Push(data interface{}) interface{} {
 	fifo.Lock()
 	defer fifo.Unlock()
