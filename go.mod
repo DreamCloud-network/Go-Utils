@@ -1,9 +1,10 @@
-module github.com/GreenMan-Network/Go-Utils
+module github.com/DreamCloud-network/Go-Utils
 
 go 1.20
 
 require (
 	cloud.google.com/go/kms v1.15.2
+	github.com/GreenMan-Network/Go-Utils v0.0.0-20230914202617-bf82cc10deb4
 	github.com/go-sql-driver/mysql v1.7.1
 	github.com/google/uuid v1.3.1
 	google.golang.org/protobuf v1.31.0

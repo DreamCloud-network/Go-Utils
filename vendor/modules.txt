@@ -13,6 +13,12 @@ cloud.google.com/go/iam/apiv1/iampb
 cloud.google.com/go/kms/apiv1
 cloud.google.com/go/kms/apiv1/kmspb
 cloud.google.com/go/kms/internal
+# github.com/GreenMan-Network/Go-Utils v0.0.0-20230914202617-bf82cc10deb4
+## explicit; go 1.20
+github.com/GreenMan-Network/Go-Utils/pkg/datautils
+github.com/GreenMan-Network/Go-Utils/pkg/fileutils
+github.com/GreenMan-Network/Go-Utils/pkg/queueutils/block
+github.com/GreenMan-Network/Go-Utils/pkg/queueutils/blockbucket
 # github.com/go-sql-driver/mysql v1.7.1
 ## explicit; go 1.13
 github.com/go-sql-driver/mysql

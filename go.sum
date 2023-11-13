@@ -10,6 +10,8 @@ cloud.google.com/go/iam v1.1.0/go.mod h1:nxdHjaKfCr7fNYx/HJMM8LgiMugmveWlkatear5
 cloud.google.com/go/kms v1.15.2 h1:lh6qra6oC4AyWe5fUUUBe/S27k12OHAleOOOw6KakdE=
 cloud.google.com/go/kms v1.15.2/go.mod h1:3hopT4+7ooWRCjc2DxgnpESFxhIraaI2IpAVUEhbT/w=
 github.com/BurntSushi/toml v0.3.1/go.mod h1:xHWCNGjB5oqiDr8zfno3MHue2Ht5sIBksp03qcyfWMU=
+github.com/GreenMan-Network/Go-Utils v0.0.0-20230914202617-bf82cc10deb4 h1:PKEgxaeV90S/v+NWvQIRBvZAL010sC/ZRYwOswDIPI0=
+github.com/GreenMan-Network/Go-Utils v0.0.0-20230914202617-bf82cc10deb4/go.mod h1:JfuuBZ8E5qCjZYSuArjJnNrtZsarMdUhW8gW/t0xi04=
 github.com/antihax/optional v1.0.0/go.mod h1:uupD/76wgC+ih3iEmQUL+0Ugr19nfwCT1kdvxnR2qWY=
 github.com/census-instrumentation/opencensus-proto v0.2.1/go.mod h1:f6KPmirojxKA12rnyqOA5BBL4O983OfeGPqjHWSTneU=
 github.com/cespare/xxhash/v2 v2.1.1/go.mod h1:VGX0DQ3Q6kWi7AoAeZDth3/j3BFtOZR5XLFGgcrjCOs=
