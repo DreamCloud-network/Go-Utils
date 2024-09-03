@@ -13,6 +13,7 @@ func TestFilo(t *testing.T) {
 		return
 	}
 
+	// Add and remove a block
 	log.Println("Filo ID: ", testFilo.GetID())
 
 	log.Println("Remove a block from an empty queue")
