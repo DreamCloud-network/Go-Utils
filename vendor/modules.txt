@@ -24,8 +24,6 @@ cloud.google.com/go/auth/internal/trustboundary
 # cloud.google.com/go/auth/oauth2adapt v0.2.8
 ## explicit; go 1.23.0
 cloud.google.com/go/auth/oauth2adapt
-# cloud.google.com/go/compute v1.49.1
-## explicit; go 1.24.0
 # cloud.google.com/go/compute/metadata v0.9.0
 ## explicit; go 1.24.0
 cloud.google.com/go/compute/metadata
@@ -43,12 +41,6 @@ cloud.google.com/go/kms/internal
 cloud.google.com/go/longrunning
 cloud.google.com/go/longrunning/autogen
 cloud.google.com/go/longrunning/autogen/longrunningpb
-# github.com/GreenMan-Network/Go-Utils v0.0.0-20230914202617-bf82cc10deb4
-## explicit; go 1.20
-github.com/GreenMan-Network/Go-Utils/pkg/datautils
-github.com/GreenMan-Network/Go-Utils/pkg/fileutils
-github.com/GreenMan-Network/Go-Utils/pkg/queueutils/block
-github.com/GreenMan-Network/Go-Utils/pkg/queueutils/blockbucket
 # github.com/confluentinc/confluent-kafka-go v1.9.2
 ## explicit; go 1.13
 github.com/confluentinc/confluent-kafka-go/kafka
@@ -66,12 +58,9 @@ github.com/go-logr/stdr
 # github.com/go-sql-driver/mysql v1.7.1
 ## explicit; go 1.13
 github.com/go-sql-driver/mysql
-# github.com/golang/groupcache v0.0.0-20241129210726-2c02b8208cf8
-## explicit; go 1.20
-# github.com/golang/protobuf v1.5.4
-## explicit; go 1.17
-# github.com/google/go-cmp v0.7.0
+# github.com/golang-jwt/jwt/v5 v5.3.0
 ## explicit; go 1.21
+github.com/golang-jwt/jwt/v5
 # github.com/google/s2a-go v0.1.9
 ## explicit; go 1.20
 github.com/google/s2a-go
@@ -113,8 +102,6 @@ github.com/googleapis/gax-go/v2/internallog
 github.com/googleapis/gax-go/v2/internallog/grpclog
 github.com/googleapis/gax-go/v2/internallog/internal
 github.com/googleapis/gax-go/v2/iterator
-# go.opencensus.io v0.24.0
-## explicit; go 1.13
 # go.opentelemetry.io/auto/sdk v1.2.1
 ## explicit; go 1.24.0
 go.opentelemetry.io/auto/sdk
@@ -213,8 +200,6 @@ google.golang.org/api/option
 google.golang.org/api/option/internaloption
 google.golang.org/api/transport/grpc
 google.golang.org/api/transport/http
-# google.golang.org/appengine v1.6.8
-## explicit; go 1.11
 # google.golang.org/genproto v0.0.0-20251103181224-f26f9409b101
 ## explicit; go 1.24.0
 google.golang.org/genproto/googleapis/cloud/location

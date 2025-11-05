@@ -4,7 +4,7 @@ import (
 	"log"
 	"testing"
 
-	"github.com/GreenMan-Network/Go-Utils/pkg/queueutils/block"
+	"github.com/DreamCloud-network/Go-Utils/pkg/queueutils/block"
 )
 
 func TestBlockBucket(t *testing.T) {

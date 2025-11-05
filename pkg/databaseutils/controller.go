@@ -9,7 +9,7 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/GreenMan-Network/Go-Utils/pkg/fileutils"
+	"github.com/DreamCloud-network/Go-Utils/pkg/fileutils"
 )
 
 func (database *Database) LoadConfigurationFile(filePath string) error {

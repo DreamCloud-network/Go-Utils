@@ -3,8 +3,8 @@ package filo
 import (
 	"sync"
 
-	"github.com/GreenMan-Network/Go-Utils/pkg/queueutils/block"
-	"github.com/GreenMan-Network/Go-Utils/pkg/queueutils/blockbucket"
+	"github.com/DreamCloud-network/Go-Utils/pkg/queueutils/block"
+	"github.com/DreamCloud-network/Go-Utils/pkg/queueutils/blockbucket"
 	"github.com/google/uuid"
 )
 
