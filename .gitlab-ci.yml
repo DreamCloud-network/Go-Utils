@@ -28,7 +28,7 @@ sync_to_github:
     
     # 1. Empurra a branch principal (ex: main). Mude para 'master' se for o seu caso.
     #    Isso garante que o GitHub tenha o histórico de commits.
-    - git push github main
+    - git push github HEAD:main
     
     # 2. Empurra a tag específica que ativou o pipeline
     #    $CI_COMMIT_TAG é uma variável especial do GitLab que contém o nome da tag
