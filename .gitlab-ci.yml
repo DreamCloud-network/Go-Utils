@@ -1,0 +1,39 @@
+stages:
+  - deploy_to_public
+
+# Este é o nome do "job"
+sync_to_github:
+  stage: deploy_to_public
+  
+  # Usamos uma imagem leve que já tem o 'git'
+  image: alpine:latest
+
+  before_script:
+    # Instala o git (boa prática, embora o alpine/latest já tenha)
+    - apk add --no-cache git
+    # Configura o Git para que ele possa fazer push
+    - git config --global user.email "ci-bot@gitlab.whiteoak.network"
+    - git config --global user.name "GitLab CI Bot"
+    
+    # Remove o remote 'origin' que aponta para o GitLab (com token)
+    # E adiciona um novo 'github' com o token de acesso
+    - git remote remove origin
+    - git remote add github "https://oauth2:${GITHUB_PAT}@github.com/${GITHUB_USERNAME}/${GITHUB_REPO_NAME}.git"
+
+  script:
+    - echo "Sincronizando com o repositório público do GitHub..."
+    
+    # 1. Empurra a branch principal (ex: main). Mude para 'master' se for o seu caso.
+    #    Isso garante que o GitHub tenha o histórico de commits.
+    - git push github main
+    
+    # 2. Empurra a tag específica que ativou o pipeline
+    #    $CI_COMMIT_TAG é uma variável especial do GitLab que contém o nome da tag
+    - git push github $CI_COMMIT_TAG
+    - echo "Tag $CI_COMMIT_TAG sincronizada com sucesso!"
+
+  rules:
+    # A MÁGICA ESTÁ AQUI:
+    # Esta regra diz ao GitLab: "Execute este job SOMENTE SE
+    # a alteração for uma nova tag."
+    - if: $CI_COMMIT_TAG
