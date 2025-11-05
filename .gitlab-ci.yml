@@ -8,6 +8,9 @@ sync_to_github:
   # Usamos uma imagem leve que já tem o 'git'
   image: alpine:latest
 
+  tags:
+    - runner
+
   before_script:
     # Instala o git (boa prática, embora o alpine/latest já tenha)
     - apk add --no-cache git
